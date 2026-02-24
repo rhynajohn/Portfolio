@@ -7,7 +7,7 @@
 
 A modern, interactive portfolio website featuring an AI-powered chat bot trained to answer questions about Rhyna's background, skills, and experience.
 
-![Portfolio Preview](https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800)
+![Portfolio Preview](https://media.licdn.com/dms/image/v2/D4D03AQHMkSzCiBWUQw/profile-displayphoto-scale_400_400/B4DZwGuxnIIgAg-/0/1769639451644?e=2147483647&v=beta&t=ee5HIUYZ0e0BksfiLG7QmphCMwptqo5snQlbWGM3YJw)
 
 ## 🌟 Features
 
