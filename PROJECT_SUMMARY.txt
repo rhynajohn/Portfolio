@@ -80,47 +80,4 @@ rhyna-portfolio/
 ✓ Markdown-style formatting in responses
 ✓ Smart keyword matching
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-🚀 DEPLOYMENT OPTIONS:
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-1. GITHUB PAGES (Free)
-   → Push to GitHub, enable Pages in settings
-   → URL: https://your-username.github.io/rhyna-portfolio
-
-2. NETLIFY (Free)
-   → Drag & drop folder to netlify.com
-   → Instant live URL
-
-3. VERCEL (Free)
-   → Use Vercel CLI or Git integration
-   → Auto-deploy on push
-
-4. FIREBASE (Free)
-   → Use Firebase CLI
-   → Global CDN
-
-See DEPLOY.md for detailed instructions!
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-💡 CUSTOMIZATION TIPS:
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-• Update js/knowledgeBase.js to change chat bot responses
-• Edit CSS variables in css/style.css to change colors
-• Replace image URL in index.html hero section with your photo
-• Add your social media links in the contact section
-• Update CNAME file if using custom domain
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-📊 TOTAL PROJECT SIZE: ~78 KB (without images)
-⚡ LOAD TIME: < 1 second on fast connections
-🌐 BROWSER SUPPORT: All modern browsers
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-Ready to deploy! 🎉
 
