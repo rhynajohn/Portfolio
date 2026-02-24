@@ -38,47 +38,6 @@ The portfolio includes an intelligent chat bot trained with Rhyna's complete pro
 - Typing indicators for realistic feel
 - Mobile-responsive chat interface
 
-## 🚀 Quick Start
-
-### Option 1: GitHub Pages (Recommended - Free)
-1. Fork this repository
-2. Go to **Settings** → **Pages**
-3. Select **Deploy from a branch** → **main** → **/ (root)**
-4. Your site will be live at `https://your-username.github.io/rhyna-portfolio`
-
-### Option 2: Netlify (Free)
-1. Go to [netlify.com](https://netlify.com)
-2. Drag and drop the project folder
-3. Get instant live URL
-
-### Option 3: Vercel (Free)
-1. Install Vercel CLI: `npm i -g vercel`
-2. Run `vercel` in project directory
-3. Deploy instantly
-
-### Option 4: Local Development
-Simply open `index.html` in your browser:
-```bash
-git clone https://github.com/your-username/rhyna-portfolio.git
-cd rhyna-portfolio
-# Open index.html in your browser
-```
-
-## 📁 Project Structure
-
-```
-rhyna-portfolio/
-├── index.html          # Main HTML file
-├── css/
-│   ├── style.css      # Main stylesheet
-│   └── chatbot.css    # Chat bot styles
-├── js/
-│   ├── knowledgeBase.js   # Chat bot knowledge base
-│   ├── chatbot.js         # Chat bot logic
-│   └── main.js            # Main website logic
-├── assets/            # Images and other assets
-└── README.md          # This file
-```
 
 ## 🎨 Customization
 
