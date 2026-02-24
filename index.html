@@ -102,7 +102,7 @@
             </div>
             <div class="hero-image-wrapper">
                 <div class="hero-image">
-                    <img src="https://media.licdn.com/dms/image/v2/D4D03AQHMkSzCiBWUQw/profile-displayphoto-scale_400_400/B4DZwGuxnIIgAg-/0/1769639451644?e=2147483647&v=beta&t=ee5HIUYZ0e0BksfiLG7QmphCMwptqo5snQlbWGM3YJw" alt="Rhyna Sussana John">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&auto=format&fit=crop&q=80" alt="Rhyna Sussana John">
                     <div class="image-glow"></div>
                 </div>
                 <div class="floating-card card-1">
@@ -502,8 +502,655 @@
         </button>
     </div>
 
-    <script src="js/knowledgeBase.js"></script>
-    <script src="js/chatbot.js"></script>
-    <script src="js/main.js"></script>
+    <script>
+// Knowledge Base Inline
+// Rhyna Sussana John - Knowledge Base for AI Chat Bot
+// This file contains all the information the chat bot uses to answer questions
+
+const KnowledgeBase = {
+    // Greeting responses
+    greetings: [
+        "Hello! 👋 I'm Rhyna's AI assistant. I can tell you about her education at FAU Erlangen, her AI/ML experience, technical skills, projects, and more!",
+        "Hi there! Want to know about Rhyna's work with generative AI or her experience at OneHash Technologies? Just ask!",
+        "Hey! I'm here to help you learn about Rhyna - from her MSc in AI to her research in diffusion models. What would you like to know?"
+    ],
+
+    // Education information
+    education: {
+        keywords: ['education', 'study', 'studying', 'degree', 'university', 'college', 'fau', 'erlangen', 'master', 'masters', 'msc', 'bachelor', 'b.tech', 'medi-caps', 'medi caps', 'germany', 'india'],
+        response: `🎓 **Education Background:**
+
+**Currently Pursuing:**
+• **MSc in Artificial Intelligence** at Friedrich-Alexander-Universität (FAU) Erlangen-Nürnberg, Germany
+• Duration: April 2025 - March 2027
+• Coursework: Speech & Language Processing, Deep Learning, Computer Vision, HCI, Information Visualization
+• Research Focus: Large-scale generative video models (Google VEO-3), diffusion-based video generation, multimodal learning
+
+**Completed:**
+• **B.Tech in Computer Science** from Medi-caps University, Indore, India
+• Duration: September 2020 - March 2024
+• **CGPA: 9.38/10** (Top 10% of batch)
+• Activities: IEEE Student Chapter Co-founder & Treasurer, Student Placement Coordinator, Graphic Design Lead`
+    },
+
+    // Work experience
+    experience: {
+        keywords: ['experience', 'work', 'job', 'internship', 'intern', 'career', 'onehash', 'lucidplus', 'iit', 'sysmetis', 'company', 'professional'],
+        response: `💼 **Professional Experience:**
+
+**1. AI/ML Intern @ OneHash Technologies** (Jan 2023 - Mar 2024)
+• Built Generative AI bot for CRM customer support (documents, PDFs, webpages)
+• Created Zoom AI assistant for multilingual meeting summaries
+• Tech: Python, FastAPI, LLM, FAISS, Streamlit
+• Delivered production-ready services actively deployed and sold
+
+**2. Software Dev Intern @ Lucidplus IT Solutions** (Jun 2023 - Aug 2023)
+• Researched Intelligent Document Processing (IDP)
+• Achieved 90%+ OCR accuracy for invoice/bill processing
+• Tech: EasyOCR, OpenCV, FastAPI, Img2Table
+
+**3. Research Intern @ IIT Indore** (Jun 2022 - Aug 2022)
+• Research under Dr. Surya Prakash in Computer Vision
+• CNNs for image classification (83-89% accuracy)
+• Tech: Python, OpenCV, Machine Learning
+
+**4. Game Dev Intern @ Sysmetis IT Solutions** (Jan 2022)
+• Built 5 games for Web/Android using Unity3D
+• Tech: C#, Unity3D, Blender, AR/VR`
+    },
+
+    // Technical skills
+    skills: {
+        keywords: ['skill', 'skills', 'programming', 'language', 'python', 'java', 'technology', 'tech stack', 'tools', 'framework', 'library', 'code'],
+        response: `🛠️ **Technical Skills:**
+
+**Programming Languages:**
+• Python (Expert), Java, C#, SQL
+
+**AI/Machine Learning:**
+• Deep Learning, Computer Vision, NLP
+• LLMs, Generative AI, Diffusion Models
+• CNNs, Multimodal Learning
+• Research in video generation models
+
+**Frameworks & Tools:**
+• FastAPI, Streamlit, REST APIs
+• OpenCV, FAISS, OCR Libraries (EasyOCR, Tesseract)
+• Unity3D, Blender (Game Dev & 3D)
+• Power BI, Excel (Data & Visualization)
+
+**Languages:**
+• English (Native)
+• German (B1 Level)`
+    },
+
+    // Projects
+    projects: {
+        keywords: ['project', 'projects', 'raebot', 'bot', 'chatbot', 'generative', 'video', 'veo', 'crm', 'zoom', 'document', 'processor'],
+        response: `🚀 **Key Projects:**
+
+**1. RAEbot (Responsive Assistant for the Elderly)**
+• AI support bot designed for elderly users
+• Focus on everyday assistance and emergency support scenarios
+
+**2. Generative AI CRM Bot (OneHash)**
+• RAG-based customer support system
+• Ingests documents, PDFs, webpages for intelligent responses
+• Production deployment with active users
+
+**3. Zoom AI Meeting Assistant**
+• Autonomous bot joining Zoom meetings
+• Generates comprehensive minutes and summaries
+• Multilingual support for global teams
+
+**4. Intelligent Document Processor**
+• IDP system for invoice and bill processing
+• 90%+ accuracy in table extraction from PDFs
+• Used EasyOCR and computer vision techniques
+
+**5. Current Research (FAU)**
+• Working with Google VEO-3 and diffusion models
+• Large-scale generative video generation
+• Spatiotemporal representation learning`
+    },
+
+    // Leadership and extracurricular
+    leadership: {
+        keywords: ['leadership', 'ieee', 'placement', 'coordinator', 'volunteer', 'tutor', 'teaching', 'extra', 'curricular', 'activity', 'activities'],
+        response: `🌟 **Leadership & Activities:**
+
+**IEEE Student Chapter:**
+• Co-founder and Treasurer at Medi-caps University
+• Current Alumni Mentor for the chapter
+• Conducted large-scale technical and gaming events
+
+**Student Placement Cell:**
+• Student Placement Coordinator
+• Liaison between students, faculty, and recruiting companies
+• Managed campus recruitment activities
+
+**Graphic Design:**
+• Led Graphic Designing Team for Alumni Association
+• Created monthly newsletters and promotional materials
+
+**Teaching & Volunteering:**
+• Academic tutor for students grades 3-10
+• Taught undergraduate OOP (Object-Oriented Programming)
+• Foster parent for 3 stray dogs (Animal Welfare)
+• Participated in Erasmus training program (Leadership focus)`
+    },
+
+    // Personal info
+    personal: {
+        keywords: ['personal', 'about you', 'hobby', 'hobbies', 'interest', 'interests', 'pet', 'pets', 'dog', 'dogs', 'animal', 'location', 'germany', 'nürnberg'],
+        response: `👤 **About Rhyna:**
+
+**Current Location:** Nürnberg, Germany (studying at FAU Erlangen)
+
+**Passions & Interests:**
+• AI Research (especially generative models and video generation)
+• Animal welfare - actively fosters stray dogs
+• Teaching and mentoring students
+• Public speaking and anchoring technical events
+• Bridging research and practical AI applications
+
+**Key Achievements:**
+• Top 10% of bachelor's batch (9.38/10 CGPA)
+• Erasmus training program participant
+• Hosted university and national-level technical events
+• Built production AI systems used by real customers
+
+**Contact:**
+• 📧 rhyna.john@gmail.com
+• 📱 +49 155 1033 7812`
+    },
+
+    // Contact information
+    contact: {
+        keywords: ['contact', 'email', 'phone', 'reach', 'connect', 'linkedin', 'github', 'social'],
+        response: `📞 **Contact Information:**
+
+**Email:** rhyna.john@gmail.com
+
+**Phone:** +49 155 1033 7812
+
+**Location:** Senefelderstr 17, Nürnberg, 90409, Germany
+
+**Current Status:** Open to AI research collaborations, industry opportunities, and interesting conversations about generative models!
+
+Feel free to reach out for:
+• Research collaborations in video generation/diffusion models
+• AI/ML engineering opportunities
+• Mentorship or academic guidance
+• Just chatting about the future of AI!`
+    },
+
+    // Research interests
+    research: {
+        keywords: ['research', 'paper', 'publication', 'thesis', 'generative', 'diffusion', 'video', 'veo', 'multimodal', 'agi', 'publication'],
+        response: `🔬 **Research Focus:**
+
+**Current Research (FAU Erlangen):**
+• Large-scale generative video models
+• Google VEO-3 experimentation
+• Diffusion-based video generation
+• Multimodal learning systems
+• Spatiotemporal representations
+• AGI-aligned systems
+
+**Research Interests:**
+• Generative models and their applications
+• Diffusion processes in video generation
+• Computer vision and pattern recognition
+• Natural language processing
+• Bridging research concepts to practical applications
+
+**Previous Research:**
+• CNN-based image classification at IIT Indore
+• OCR and document understanding at Lucidplus
+• LLM applications in customer support at OneHash`
+    },
+
+    // Default fallback
+    default: "I'm not sure I understood that correctly. I can tell you about Rhyna's:
+
+• 🎓 Education at FAU Erlangen and Medi-caps University
+• 💼 Work experience at OneHash, Lucidplus, IIT Indore
+• 🛠️ Technical skills in AI/ML, Python, Computer Vision
+• 🚀 Projects like RAEbot, CRM AI, Zoom Assistant
+• 🌟 Leadership roles and volunteering
+• 📞 Contact information
+
+What would you like to know?"
+};
+
+// Export for use in chatbot.js
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = KnowledgeBase;
+}
+
+</script>
+<script>
+// Chat Bot Inline
+// Chat Bot Logic for Rhyna's Portfolio
+// Handles user interactions, message processing, and responses
+
+class ChatBot {
+    constructor() {
+        this.container = document.getElementById('chatContainer');
+        this.messagesContainer = document.getElementById('chatMessages');
+        this.input = document.getElementById('chatInput');
+        this.sendBtn = document.getElementById('chatSend');
+        this.toggleBtn = document.getElementById('chatToggle');
+        this.closeBtn = document.getElementById('chatClose');
+        this.typingIndicator = document.getElementById('typingIndicator');
+        this.suggestedQuestions = document.getElementById('suggestedQuestions');
+
+        this.isOpen = false;
+        this.messageHistory = [];
+
+        this.init();
+    }
+
+    init() {
+        // Event listeners
+        this.toggleBtn.addEventListener('click', () => this.toggle());
+        this.closeBtn.addEventListener('click', () => this.close());
+        this.sendBtn.addEventListener('click', () => this.sendMessage());
+        this.input.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') this.sendMessage();
+        });
+
+        // Suggested question buttons
+        document.querySelectorAll('.suggested-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                const question = e.target.getAttribute('data-question');
+                this.input.value = question;
+                this.sendMessage();
+            });
+        });
+
+        // Close when clicking outside
+        document.addEventListener('click', (e) => {
+            if (this.isOpen && !e.target.closest('.chat-widget')) {
+                this.close();
+            }
+        });
+
+        // Focus input when opened
+        this.container.addEventListener('transitionend', () => {
+            if (this.isOpen) this.input.focus();
+        });
+    }
+
+    toggle() {
+        this.isOpen = !this.isOpen;
+        this.container.classList.toggle('active', this.isOpen);
+        this.toggleBtn.style.transform = this.isOpen ? 'scale(0)' : 'scale(1)';
+
+        if (this.isOpen) {
+            setTimeout(() => this.input.focus(), 100);
+        }
+    }
+
+    close() {
+        this.isOpen = false;
+        this.container.classList.remove('active');
+        this.toggleBtn.style.transform = 'scale(1)';
+    }
+
+    sendMessage() {
+        const message = this.input.value.trim();
+        if (!message) return;
+
+        // Add user message
+        this.addMessage(message, 'user');
+        this.input.value = '';
+
+        // Hide suggested questions after first interaction
+        if (this.suggestedQuestions) {
+            this.suggestedQuestions.style.display = 'none';
+        }
+
+        // Show typing indicator
+        this.showTyping();
+
+        // Generate response with realistic delay
+        const delay = 800 + Math.random() * 700;
+        setTimeout(() => {
+            this.hideTyping();
+            const response = this.generateResponse(message);
+            this.addMessage(response, 'bot');
+        }, delay);
+    }
+
+    addMessage(text, sender) {
+        const messageDiv = document.createElement('div');
+        messageDiv.className = `message ${sender}`;
+
+        // Convert markdown-style formatting to HTML
+        let formattedText = text
+            .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+            .replace(/•/g, '&bull;')
+            .replace(/
+/g, '<br>');
+
+        if (sender === 'bot') {
+            messageDiv.innerHTML = `<div class="message-content">${formattedText}</div>`;
+        } else {
+            messageDiv.textContent = text;
+        }
+
+        this.messagesContainer.appendChild(messageDiv);
+        this.scrollToBottom();
+
+        // Store in history
+        this.messageHistory.push({ sender, text });
+    }
+
+    showTyping() {
+        this.typingIndicator.classList.add('active');
+        this.scrollToBottom();
+    }
+
+    hideTyping() {
+        this.typingIndicator.classList.remove('active');
+    }
+
+    scrollToBottom() {
+        this.messagesContainer.scrollTop = this.messagesContainer.scrollHeight;
+    }
+
+    generateResponse(input) {
+        const lowerInput = input.toLowerCase();
+
+        // Check for greetings
+        if (/^(hi|hello|hey|greetings|howdy|hola)/i.test(lowerInput)) {
+            return this.getRandomResponse(KnowledgeBase.greetings);
+        }
+
+        // Check for gratitude
+        if (/thank|thanks|appreciate/i.test(lowerInput)) {
+            return "You're welcome! 😊 Feel free to ask if you have any other questions about Rhyna!";
+        }
+
+        // Check for goodbye
+        if (/bye|goodbye|see you|later/i.test(lowerInput)) {
+            return "Goodbye! Have a great day! Feel free to come back if you want to know more about Rhyna. 👋";
+        }
+
+        // Check each category in knowledge base
+        for (const [key, value] of Object.entries(KnowledgeBase)) {
+            if (key === 'greetings' || key === 'default') continue;
+
+            if (value.keywords && value.keywords.some(keyword => lowerInput.includes(keyword))) {
+                return value.response;
+            }
+        }
+
+        // Context-aware responses based on keywords
+        if (lowerInput.includes('ai') || lowerInput.includes('machine learning') || lowerInput.includes('ml')) {
+            return KnowledgeBase.experience.response;
+        }
+
+        if (lowerInput.includes('code') || lowerInput.includes('develop') || lowerInput.includes('programming')) {
+            return KnowledgeBase.skills.response;
+        }
+
+        if (lowerInput.includes('study') || lowerInput.includes('learn') || lowerInput.includes('student')) {
+            return KnowledgeBase.education.response;
+        }
+
+        // Default response
+        return KnowledgeBase.default;
+    }
+
+    getRandomResponse(responses) {
+        return responses[Math.floor(Math.random() * responses.length)];
+    }
+}
+
+// Initialize chat bot when DOM is loaded
+document.addEventListener('DOMContentLoaded', () => {
+    window.chatBot = new ChatBot();
+});
+
+</script>
+<script>
+// Main JS Inline
+// Main JavaScript for Rhyna's Portfolio
+// Handles navigation, animations, counters, and UI interactions
+
+document.addEventListener('DOMContentLoaded', () => {
+    initNavigation();
+    initScrollAnimations();
+    initCounters();
+    initSmoothScroll();
+});
+
+// Navigation functionality
+function initNavigation() {
+    const navbar = document.getElementById('navbar');
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    // Navbar scroll effect
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
+
+    // Mobile menu toggle
+    if (mobileMenuBtn && mobileMenu) {
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+
+            // Animate hamburger
+            const spans = mobileMenuBtn.querySelectorAll('span');
+            if (mobileMenu.classList.contains('active')) {
+                spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
+                spans[1].style.opacity = '0';
+                spans[2].style.transform = 'rotate(-45deg) translate(7px, -6px)';
+            } else {
+                spans[0].style.transform = 'none';
+                spans[1].style.opacity = '1';
+                spans[2].style.transform = 'none';
+            }
+        });
+
+        // Close mobile menu when clicking a link
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+                const spans = mobileMenuBtn.querySelectorAll('span');
+                spans[0].style.transform = 'none';
+                spans[1].style.opacity = '1';
+                spans[2].style.transform = 'none';
+            });
+        });
+    }
+
+    // Active nav link on scroll
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    window.addEventListener('scroll', () => {
+        let current = '';
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            if (scrollY >= sectionTop - 200) {
+                current = section.getAttribute('id');
+            }
+        });
+
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${current}`) {
+                link.classList.add('active');
+            }
+        });
+    });
+}
+
+// Scroll animations using Intersection Observer
+function initScrollAnimations() {
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate-in');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    // Observe elements for animation
+    const animateElements = document.querySelectorAll(
+        '.about-card, .timeline-item, .education-card, .project-card, .skill-category'
+    );
+
+    animateElements.forEach((el, index) => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(30px)';
+        el.style.transition = `opacity 0.6s ease ${index * 0.1}s, transform 0.6s ease ${index * 0.1}s`;
+        observer.observe(el);
+    });
+
+    // Add animate-in class styles
+    const style = document.createElement('style');
+    style.textContent = `
+        .animate-in {
+            opacity: 1 !important;
+            transform: translateY(0) !important;
+        }
+    `;
+    document.head.appendChild(style);
+}
+
+// Animated counters for stats
+function initCounters() {
+    const counters = document.querySelectorAll('.stat-number[data-count]');
+
+    const observerOptions = {
+        threshold: 0.5
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const counter = entry.target;
+                const target = parseFloat(counter.getAttribute('data-count'));
+                const duration = 2000;
+                const step = target / (duration / 16);
+                let current = 0;
+
+                const updateCounter = () => {
+                    current += step;
+                    if (current < target) {
+                        counter.textContent = current.toFixed(2);
+                        requestAnimationFrame(updateCounter);
+                    } else {
+                        counter.textContent = target;
+                    }
+                };
+
+                updateCounter();
+                observer.unobserve(counter);
+            }
+        });
+    }, observerOptions);
+
+    counters.forEach(counter => observer.observe(counter));
+}
+
+// Smooth scroll for anchor links
+function initSmoothScroll() {
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                const headerOffset = 80;
+                const elementPosition = target.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+}
+
+// Parallax effect for hero section
+window.addEventListener('scroll', () => {
+    const scrolled = window.pageYOffset;
+    const parallaxElements = document.querySelectorAll('.gradient-sphere');
+
+    parallaxElements.forEach((el, index) => {
+        const speed = 0.5 + (index * 0.1);
+        el.style.transform = `translateY(${scrolled * speed}px)`;
+    });
+});
+
+// Add hover effect to project cards
+document.querySelectorAll('.project-card').forEach(card => {
+    card.addEventListener('mouseenter', function() {
+        this.style.transform = 'translateY(-10px) scale(1.02)';
+    });
+
+    card.addEventListener('mouseleave', function() {
+        this.style.transform = 'translateY(0) scale(1)';
+    });
+});
+
+// Typing effect for hero subtitle (optional enhancement)
+function typeWriter(element, text, speed = 50) {
+    let i = 0;
+    element.textContent = '';
+
+    function type() {
+        if (i < text.length) {
+            element.textContent += text.charAt(i);
+            i++;
+            setTimeout(type, speed);
+        }
+    }
+
+    type();
+}
+
+// Reveal on scroll for timeline items
+const timelineObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateX(0)';
+        }
+    });
+}, { threshold: 0.2 });
+
+document.querySelectorAll('.timeline-item').forEach(item => {
+    item.style.opacity = '0';
+    item.style.transform = 'translateX(-20px)';
+    item.style.transition = 'all 0.6s ease-out';
+    timelineObserver.observe(item);
+});
+
+// Console easter egg
+console.log('%c👋 Hey there!', 'font-size: 24px; font-weight: bold; color: #6366f1;');
+console.log('%cThanks for checking out Rhyna\'s portfolio!', 'font-size: 14px; color: #64748b;');
+console.log('%cFeel free to reach out at rhyna.john@gmail.com', 'font-size: 12px; color: #ec4899;');
+
+</script>
 </body>
 </html>
