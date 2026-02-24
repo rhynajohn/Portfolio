@@ -1,0 +1,26 @@
+{
+  "name": "rhyna-portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio website with AI chat bot for Rhyna Sussana John",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx live-server --port=3000"
+  },
+  "keywords": [
+    "portfolio",
+    "ai",
+    "machine-learning",
+    "chat-bot",
+    "responsive",
+    "html",
+    "css",
+    "javascript"
+  ],
+  "author": "Rhyna Sussana John",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "serve": "^14.2.0"
+  }
+}

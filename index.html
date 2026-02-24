@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rhyna Sussana John - AI Researcher & Master's Student in Artificial Intelligence at FAU Erlangen. Expert in Generative AI, Computer Vision, and Deep Learning.">
+    <meta name="keywords" content="Rhyna John, AI Researcher, Machine Learning, Deep Learning, FAU Erlangen, Generative AI, Computer Vision">
+    <meta name="author" content="Rhyna Sussana John">
+    <meta property="og:title" content="Rhyna Sussana John | AI Researcher & Developer">
+    <meta property="og:description" content="Master's student in AI at FAU Erlangen. Working on generative video models, diffusion processes, and multimodal learning.">
+    <meta property="og:type" content="website">
+    <title>Rhyna Sussana John | AI Researcher & Developer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/chatbot.css">
+</head>
+<body>
+    <div class="bg-animation">
+        <div class="gradient-sphere sphere-1"></div>
+        <div class="gradient-sphere sphere-2"></div>
+        <div class="gradient-sphere sphere-3"></div>
+    </div>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-text">Rhyna</span>
+                <span class="logo-dot"></span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-robot"></i>
+                    <span>MSc. AI Student @ FAU Erlangen</span>
+                </div>
+                <h1 class="hero-title">
+                    Hi, I'm <span class="gradient-text">Rhyna</span><br>
+                    <span class="text-outline">Sussana John</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Master's student in Artificial Intelligence at Friedrich-Alexander Universität 
+                    Erlangen-Nürnberg. Passionate about generative models, diffusion processes, 
+                    and multimodal learning.
+                </p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">
+                        <span>Get In Touch</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#experience" class="btn btn-secondary">
+                        <span>View Experience</span>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="9.38">0</div>
+                        <div class="stat-label">CGPA</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="4">0</div>
+                        <div class="stat-label">Internships</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-text">B1</div>
+                        <div class="stat-label">German</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&auto=format&fit=crop&q=80" alt="Rhyna Sussana John">
+                    <div class="image-glow"></div>
+                </div>
+                <div class="floating-card card-1">
+                    <i class="fas fa-brain"></i>
+                    <span>Deep Learning</span>
+                </div>
+                <div class="floating-card card-2">
+                    <i class="fas fa-video"></i>
+                    <span>Generative AI</span>
+                </div>
+                <div class="floating-card card-3">
+                    <i class="fas fa-code"></i>
+                    <span>Full Stack</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"><div class="wheel"></div></div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <section class="about section-padding" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">About Me</span>
+                <h2 class="section-title">Passionate about <span class="gradient-text">AI Innovation</span></h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="card-icon"><i class="fas fa-brain"></i></div>
+                    <h3>AI Research</h3>
+                    <p>Working on large-scale generative video models including Google VEO-3 and diffusion-based generation.</p>
+                    <ul class="card-list">
+                        <li>Generative Video Models</li>
+                        <li>Diffusion Processes</li>
+                        <li>Multimodal Learning</li>
+                    </ul>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon"><i class="fas fa-code"></i></div>
+                    <h3>Full-Stack Development</h3>
+                    <p>Building production-ready AI services with FastAPI backends and Streamlit frontends.</p>
+                    <ul class="card-list">
+                        <li>Production AI Services</li>
+                        <li>LLM Integration</li>
+                        <li>Document Processing</li>
+                    </ul>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon"><i class="fas fa-users"></i></div>
+                    <h3>Leadership</h3>
+                    <p>IEEE Chapter Co-founder, Placement Coordinator, and experienced in public speaking.</p>
+                    <ul class="card-list">
+                        <li>IEEE Chapter Co-founder</li>
+                        <li>Placement Coordinator</li>
+                        <li>Public Speaking</li>
+                    </ul>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon"><i class="fas fa-heart"></i></div>
+                    <h3>Community Impact</h3>
+                    <p>Foster parent for 3 stray dogs. Academic tutor and OOP instructor for students.</p>
+                    <ul class="card-list">
+                        <li>Animal Welfare</li>
+                        <li>Academic Tutoring</li>
+                        <li>Social Impact</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="experience section-padding" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Experience</span>
+                <h2 class="section-title">Professional <span class="gradient-text">Journey</span></h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-line"></div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"><div class="marker-dot"></div></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="timeline-meta">
+                                <span class="timeline-date">Jan 2023 - Mar 2024</span>
+                                <span class="timeline-location"><i class="fas fa-map-marker-alt"></i> Indore, India</span>
+                            </div>
+                            <h3 class="timeline-title">AI/ML Intern</h3>
+                            <h4 class="timeline-company">OneHash Technologies</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <ul class="timeline-list">
+                                <li>Built <strong>Generative AI bot</strong> for CRM customer support</li>
+                                <li>Created <strong>Zoom AI assistant</strong> for multilingual meeting summaries</li>
+                                <li>Used Python, FastAPI, LLM, FAISS, Streamlit</li>
+                            </ul>
+                            <div class="timeline-tags">
+                                <span class="tag">Generative AI</span>
+                                <span class="tag">LLM</span>
+                                <span class="tag">FastAPI</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"><div class="marker-dot"></div></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="timeline-meta">
+                                <span class="timeline-date">Jun 2023 - Aug 2023</span>
+                                <span class="timeline-location"><i class="fas fa-map-marker-alt"></i> Bangalore, India</span>
+                            </div>
+                            <h3 class="timeline-title">Software Development Intern</h3>
+                            <h4 class="timeline-company">Lucidplus IT Solutions</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <ul class="timeline-list">
+                                <li>Researched <strong>Intelligent Document Processing (IDP)</strong></li>
+                                <li>Achieved <strong>90%+ accuracy</strong> in OCR table extraction</li>
+                                <li>Used EasyOCR, OpenCV, FastAPI</li>
+                            </ul>
+                            <div class="timeline-tags">
+                                <span class="tag">OCR</span>
+                                <span class="tag">IDP</span>
+                                <span class="tag">OpenCV</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"><div class="marker-dot"></div></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="timeline-meta">
+                                <span class="timeline-date">Jun 2022 - Aug 2022</span>
+                                <span class="timeline-location"><i class="fas fa-map-marker-alt"></i> IIT Indore</span>
+                            </div>
+                            <h3 class="timeline-title">Summer Research Intern</h3>
+                            <h4 class="timeline-company">IIT Indore</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <ul class="timeline-list">
+                                <li>Research under <strong>Dr. Surya Prakash</strong></li>
+                                <li><strong>CNNs</strong> for computer vision (83-89% accuracy)</li>
+                                <li>Python, OpenCV, Machine Learning</li>
+                            </ul>
+                            <div class="timeline-tags">
+                                <span class="tag">Computer Vision</span>
+                                <span class="tag">CNN</span>
+                                <span class="tag">Research</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="education section-padding" id="education">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Education</span>
+                <h2 class="section-title">Academic <span class="gradient-text">Background</span></h2>
+            </div>
+            <div class="education-grid">
+                <div class="education-card featured">
+                    <div class="card-header">
+                        <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <div class="edu-status">Current</div>
+                    </div>
+                    <h3 class="edu-degree">MSc. Artificial Intelligence</h3>
+                    <h4 class="edu-school">Friedrich-Alexander-Universität (FAU)</h4>
+                    <p class="edu-location"><i class="fas fa-map-marker-alt"></i> Erlangen, Germany</p>
+                    <p class="edu-duration">April 2025 - March 2027</p>
+                    <div class="edu-details">
+                        <h5>Focus Areas:</h5>
+                        <ul>
+                            <li>Speech and Language Processing</li>
+                            <li>Deep Learning & Computer Vision</li>
+                            <li>Human-Computer Interaction</li>
+                            <li>Generative Video Models (VEO-3)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="education-card">
+                    <div class="card-header">
+                        <div class="edu-icon"><i class="fas fa-university"></i></div>
+                        <div class="edu-badge">9.38/10 CGPA</div>
+                    </div>
+                    <h3 class="edu-degree">B.Tech Computer Science</h3>
+                    <h4 class="edu-school">Medi-caps University</h4>
+                    <p class="edu-location"><i class="fas fa-map-marker-alt"></i> Indore, India</p>
+                    <p class="edu-duration">Sept 2020 - March 2024</p>
+                    <div class="edu-achievements">
+                        <h5>Achievements:</h5>
+                        <ul>
+                            <li>Top 10% of batch</li>
+                            <li>IEEE Chapter Co-founder & Treasurer</li>
+                            <li>Student Placement Coordinator</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects section-padding" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Projects</span>
+                <h2 class="section-title">Featured <span class="gradient-text">Work</span></h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-icon"><i class="fas fa-robot"></i></div>
+                    <h3>RAEbot</h3>
+                    <p class="project-subtitle">Responsive Assistant for the Elderly</p>
+                    <p class="project-desc">AI support bot for elderly users with emergency assistance capabilities.</p>
+                    <div class="project-tech">
+                        <span>AI Chatbot</span>
+                        <span>NLP</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon"><i class="fas fa-headset"></i></div>
+                    <h3>Generative AI CRM Bot</h3>
+                    <p class="project-subtitle">OneHash Technologies</p>
+                    <p class="project-desc">RAG-based customer support system with document ingestion.</p>
+                    <div class="project-tech">
+                        <span>LLM</span>
+                        <span>RAG</span>
+                        <span>FastAPI</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon"><i class="fas fa-video"></i></div>
+                    <h3>Zoom AI Assistant</h3>
+                    <p class="project-subtitle">Meeting Intelligence</p>
+                    <p class="project-desc">Autonomous meeting bot generating multilingual summaries.</p>
+                    <div class="project-tech">
+                        <span>Zoom API</span>
+                        <span>NLP</span>
+                        <span>Automation</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon"><i class="fas fa-file-invoice"></i></div>
+                    <h3>Intelligent Document Processor</h3>
+                    <p class="project-subtitle">Lucidplus IT Solutions</p>
+                    <p class="project-desc">IDP system with 90%+ OCR accuracy for invoice processing.</p>
+                    <div class="project-tech">
+                        <span>OCR</span>
+                        <span>EasyOCR</span>
+                        <span>OpenCV</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills section-padding" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Skills</span>
+                <h2 class="section-title">Technical <span class="gradient-text">Expertise</span></h2>
+            </div>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Programming</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">C#</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">FastAPI</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-brain"></i> AI / ML</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Deep Learning</span>
+                        <span class="skill-tag">Computer Vision</span>
+                        <span class="skill-tag">NLP</span>
+                        <span class="skill-tag">LLMs</span>
+                        <span class="skill-tag">Generative AI</span>
+                        <span class="skill-tag">Diffusion Models</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-cogs"></i> Tools</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">OpenCV</span>
+                        <span class="skill-tag">FAISS</span>
+                        <span class="skill-tag">Streamlit</span>
+                        <span class="skill-tag">Unity3D</span>
+                        <span class="skill-tag">Blender</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-language"></i> Languages</h3>
+                    <div class="language-items">
+                        <div class="language-item">
+                            <span class="lang-name">English</span>
+                            <span class="lang-level">Native</span>
+                        </div>
+                        <div class="language-item">
+                            <span class="lang-name">German</span>
+                            <span class="lang-level">B1</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact section-padding" id="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <span class="section-tag">Contact</span>
+                    <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+                    <div class="contact-details">
+                        <a href="mailto:rhyna.john@gmail.com" class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="contact-text">
+                                <span class="label">Email</span>
+                                <span class="value">rhyna.john@gmail.com</span>
+                            </div>
+                        </a>
+                        <a href="tel:+4915510337812" class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                            <div class="contact-text">
+                                <span class="label">Phone</span>
+                                <span class="value">+49 155 1033 7812</span>
+                            </div>
+                        </a>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="contact-text">
+                                <span class="label">Location</span>
+                                <span class="value">Nürnberg, Germany</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Rhyna Sussana John. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div class="chat-widget" id="chatWidget">
+        <div class="chat-container" id="chatContainer">
+            <div class="chat-header">
+                <div class="chat-avatar"><i class="fas fa-robot"></i></div>
+                <div class="chat-info">
+                    <h4>Ask About Rhyna</h4>
+                    <span class="status"><span class="status-dot"></span>Online</span>
+                </div>
+                <button class="chat-close" id="chatClose"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="chat-messages" id="chatMessages">
+                <div class="message bot">
+                    <div class="message-content">
+                        <p>Hello! 👋 I'm Rhyna's AI assistant. Ask me about:</p>
+                        <ul>
+                            <li>Education at FAU Erlangen</li>
+                            <li>AI/ML experience</li>
+                            <li>Technical skills</li>
+                            <li>Projects & research</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="suggested-questions" id="suggestedQuestions">
+                <button class="suggested-btn" data-question="What is Rhyna studying?">Education?</button>
+                <button class="suggested-btn" data-question="Tell me about her AI experience">AI Work?</button>
+                <button class="suggested-btn" data-question="What are her technical skills?">Skills?</button>
+                <button class="suggested-btn" data-question="What projects has she built?">Projects?</button>
+            </div>
+            <div class="typing-indicator" id="typingIndicator">
+                <span></span><span></span><span></span>
+            </div>
+            <div class="chat-input-container">
+                <input type="text" class="chat-input" id="chatInput" placeholder="Type your question...">
+                <button class="chat-send" id="chatSend"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+        <button class="chat-toggle" id="chatToggle">
+            <i class="fas fa-comment-dots"></i>
+        </button>
+    </div>
+
+    <script src="js/knowledgeBase.js"></script>
+    <script src="js/chatbot.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
